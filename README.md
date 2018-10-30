@@ -1,2 +1,2 @@
 # portfolio
-portfolio of worked done
+portfolio for employers
