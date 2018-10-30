@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+long
+<input type="text" id="lon"><br/>
+lat
+<input type="text" id="lat" ><br/>
+<input type="button" id="submit" value="show map" onclick="displayStaticMapgetdata()">
+<input type="button" id="save	" value="save map" onclick="savecords()">
+<br/>
+<input type='button' value="Show map centered on ME" onclick="getLocation()">
+<p id='mapImg'> PUT MAP HERE</p>
+
+<p id='savedMapCoordinates'>SAVED MAPS</p>
+
+
+
+
+<script>
+var mapMgr={
+		cords : [],
+		
+		add : function(lat,lon) {
+			mapMgr.cords.push({"lat":lat,"lon":lon});
+	    },
+	    
+	    get : function(index) {
+	    	return mapMgr.cords[index]
+		},
+	    
+	    getcoordinateList : function() {
+	    	return mapMgr.cords;
+	    }
+};
+
+function savecords(){
+	lat=document.getElementById("lon").value;
+	lon=document.getElementById("lat").value;
+	
+	mapMgr.add(lat,lon)
+
+	
+	
+	var y="<ul>"
+	
+	mapMgr.getcoordinateList().forEach(function(element) {
+		  y+="<li>"+element.lat+" ";
+		  y+=element.lon+"</li>";
+	});
+	
+	y+="</ul>"
+	console.log(y);
+	x=document.getElementById("savedMapCoordinates").innerHTML=y;
+	
+}
+
+function displayStaticMapgetdata(){
+	lat=document.getElementById("lon").value;
+	lon=document.getElementById("lat").value;
+	console.log(lat);
+	console.log(lon);
+	displayStaticMap(lat,lon,"mapImg");
+}
+
+function displayStaticMap(lat, lon, element_ID){
+	var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon;
+    img_url +=      "&zoom=14&size=800x600&sensor=false";
+    console.log(img_url);
+mapID = document.getElementById(element_ID)
+mapID.innerHTML = "<img src='"+img_url+"'>";
+}
+
+
+function getLocation() {
+                    if (navigator.geolocation)
+        navigator.geolocation.watchPosition(showPosition);
+                    else
+        x.innerHTML = "Geolocation is not supported";
+}
+
+function showPosition(position) {
+                    var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+                    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon;
+        img_url +=      "&zoom=14&size=800x600&sensor=false";
+
+    mapID = document.getElementById("mapImg")
+    console.log(img_url);
+    mapID.innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+</body>
+</html>

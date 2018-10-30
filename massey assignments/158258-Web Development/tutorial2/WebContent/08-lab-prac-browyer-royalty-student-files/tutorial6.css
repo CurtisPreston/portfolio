@@ -1,0 +1,42 @@
+body{
+	
+	
+}
+section , footer{
+	width: 90%;
+	display:block;
+	float: right;
+	
+}
+ td.rotate{
+padding-top:20px;
+-webkit-transform: rotate(330deg);
+-moz-transform: rotate(330deg);
+-o-transform: rotate(330deg);
+transform: rotate(330deg);
+}
+
+
+aside{
+	width: 10%;
+	display:block;
+	float: left;
+}
+
+
+footer table{
+	background-color:rgb(10,10,100);
+	width: 100%;
+}
+
+footer td{
+	width:20%;
+	display: block;
+	text-align: center;
+	float: left;
+}
+
+footer table a{
+	color: white;
+	
+}

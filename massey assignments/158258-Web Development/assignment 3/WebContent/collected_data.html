@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta charset="UTF-8">
+<title>flat foods</title>
+</head>
+<body>
+	<header>
+	<a href="index.html"><img src="logo.png" width="10%" alt="" /></a>
+		<h1>flat foods</h1>
+
+	</header>
+	<navPanel>
+	<p>
+		<b> <a href="about.html">about us</a> </b>
+	</p>
+	<br />
+	<p>
+		<b> <a href="mailer.html">sign up for mailer</a> </b>
+	</p>
+	<p>
+		<b> <a href="newest.html">newest meals</a> </b>
+	</p>
+	</navPanel>
+	<script>
+	function showemails(){
+		document.getElementById("emails").innerHTML = localStorage.email;
+	}
+	
+	function clearemails(){
+		localStorage.removeItem("email")
+		showemails();
+	}
+	</script>
+	<div id=content>
+	<button onclick="showemails()">show emails</button>
+	<button onclick="clearemails()">clear emails</button>
+	<div id="emails">
+	
+	</div>
+	</div>
+</body>
+</html>

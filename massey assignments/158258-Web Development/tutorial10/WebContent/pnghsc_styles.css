@@ -1,0 +1,60 @@
+/*
+   The Palmerston North Girls High School (PNGHS) Choir
+     
+   Author: 158.258
+   Date:   2016-07-28   
+
+   Filename: pnghsc_styles.css
+   Supporting Files: 
+
+*/
+
+
+
+body {
+	
+	font-weight: 100;
+	font-family: myFirstFont;
+	background-color: rgba(200,100,100,50);
+}
+
+h2 {
+	font-size: 30pt;
+}
+
+h1{
+	
+	color:rgba(100,100,100,40)
+}
+h1 img{
+	float: left;
+}
+
+blockquote{
+	background-color: rgba(100,100,100,50);
+	
+}
+
+ul {
+    list-style-image: url('coleen.png');
+}
+
+ul:hover {
+    list-style-image: url('coleenMAD.png');
+}
+h1 img:hover{
+	filter: blur(20px);
+}
+
+p {
+
+
+	line-height: 3;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    
+    src: url(nobile-webfont.ttf);
+}

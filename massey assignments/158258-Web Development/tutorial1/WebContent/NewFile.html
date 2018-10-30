@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="java.js"></script>
+
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+<h1>header</h1>
+<h2>sub header</h2>
+
+<script>
+document.write("memes")
+//function popup(x){
+//	alert(x);
+//}
+
+</script>
+
+<br/>
+<button id="clickMe" type="button" value="clickme" onclick="popup('one');" >b1</button>
+<br/>
+<button id="clickMe" type="button" value="clickme" onclick="popup('two');" >b2</button>
+<br/>
+<input type="text" name="fname" id="textbox1">
+<br/>
+<button id="submmit"  type="button" onclick="textgetset();" >b3</button>
+<br/>
+<div id="text">
+</div>
+<button id="submmit"  type="button" onclick="countp()" >b4</button>
+<br/>
+
+
+<h4>Change Body Font</h4>
+
+<input type=submit value='Body Font is Arial  ' onClick="setFont('Arial'  )"> <br>
+<input type=submit value='Body Font is Georgia' onClick="setFont('Georgia')"> <br>
+<input type=submit value='Body Font is Times  ' onClick="setFont('Times'  )"> <br>
+<input type=submit value='Revert Body Font    ' onClick="revertFont()"      > <br>
+<input type=submit value='Show Changes        ' onClick="showChanges()"     > <br>
+<input type=submit value='Clear        ' onClick="Clear()"     > <br>
+<input type=submit value='Delete-Last         ' onClick="Delete_Last()"     > <br>
+
+
+<p><b>Changes</b></p>
+<p id = 'changeList'> None yet </p>
+
+
+<br/>
+<input type="text" name="fname" id="textbox2">
+<br/>
+<button id="button"  type="button" onclick="counter()" >b4</button>
+<br/>
+<p id="output"></p>
+<script>
+
+function counter(){
+	var v = document.getElementById('textbox2').value;
+	var b=parseInt(v)
+	
+	if(isNaN(b)){
+		alert("not a valid number")
+	}else{
+	
+	out=""
+		for(i=0;i<=b;i++){
+		out+=parseInt(i)+"<br/>"
+		}
+		document.getElementById('output').innerHTML = out;
+	}
+	
+}
+originalFont=null  // Global - place to save original
+fontChanges = Array();
+function Delete_Last(){
+	fontChanges.pop();
+	showChanges();
+}
+function setFont(whichFont){
+   if (originalFont == null) {
+      originalFont = document.body.style.fontFamily;
+   }
+   document.body.style.fontFamily = whichFont
+   fontChanges.push(whichFont)
+   showChanges();
+}
+function Clear(){
+	fontChanges = Array();
+	revertFont();
+	showChanges();
+}
+function showChanges(){
+   if (fontChanges.length == 0){
+     alert("No changes")
+   }
+   else {
+      s = ''
+      for (i=0; i<fontChanges.length; i++) {
+        s = s + fontChanges[i] + '<br>'
+      document.getElementById('changeList').innerHTML = s
+      }
+   }
+}
+function revertFont(){
+	document.body.style.fontFamily=originalFont;
+	fontChanges.push(document.body.style.fontFamily)
+	
+}
+</script>
+</body>
+</html>

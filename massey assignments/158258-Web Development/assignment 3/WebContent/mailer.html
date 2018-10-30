@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Description" content="the sign up page for flat foods a great site for deciding what to eat">
+<meta name="Keywords" content="flat foods food cheap meals planing ">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta charset="UTF-8">
+<title>flat foods</title>
+</head>
+<body>
+	<header>
+	<a href="index.html"><img src="logo.png" width="10%" alt="" /></a>
+		<h1>flat foods</h1>
+
+	</header>
+	<navPanel>
+	<p>
+		<b> <a href="about.html">about us</a> </b>
+	</p>
+	<br />
+	<p>
+		<b> <a href="mailer.html">sign up for mailer</a> </b>
+	</p>
+	<p>
+		<b> <a href="newest.html">newest meals</a> </b>
+	</p>
+	
+	<p>
+		<b> <a href="collected_data.html">show emails</a> </b>
+	</p>
+	</navPanel>
+	<script type="text/javascript">
+	function storedata() {
+		data= document.getElementById("email").value
+		emails=localStorage.getItem("email")
+		if(emails === undefined || emails === null){
+			emails=data+"<br/>"
+		}else{
+			emails=emails+data+"<br/>"
+		}
+		localStorage.setItem("email",emails)
+		
+		document.getElementById("email").value="";
+		displaythankyou()
+	}
+	function displaythankyou(){
+		img = "icecream-in-love-dribbble.gif"
+		
+		html='<img src="'+img+ '">'
+		html=html+"<br/> thank you for signing up for our mailer"
+		document.getElementById("thankyou").innerHTML = html;
+		console.log(html)
+		
+	}
+	</script>
+	<div id=content>
+		<div id="mailer">
+			sign up for our mailing list
+			<br/>
+			email:
+			<textarea id="email" rows="1" cols="40"></textarea>
+			<button onclick="storedata()" >sign up</button>
+		<div id="thankyou">
+		
+		</div>
+		</div>
+	</div>
+</body>
+</html>

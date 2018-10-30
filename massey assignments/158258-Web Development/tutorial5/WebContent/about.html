@@ -1,0 +1,107 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta name="Description" content="the about page for flat foods a great site for deciding what to eat">
+<meta name="Keywords" content="flat foods food cheap meals planing ">
+<script>
+function showPosition() {
+    latlon = "-41.2828598,174.7769328";
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon;
+    img_url +=      "&zoom=14&size=400x400&sensor=false";
+
+mapID = document.getElementById("map")
+mapID.innerHTML = "<img src='"+img_url+"'>";
+
+}
+function showemail(){
+	console.log("emaol");
+	email='<a href="mailto:example@email.com">feel free to email us</a>';
+	document.getElementById("email").innerHTML=email;
+	
+}
+
+window.onload = showPosition;
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta charset="UTF-8">
+<title>flat foods</title>
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="logo.png" width="10%" alt="" /></a>
+		<h1>flat foods</h1>
+	</header>
+	<navPanel>
+	<p>
+		<b> <a href="about.html">about us</a> </b>
+	</p>
+	<br />
+	<p>
+		<b> <a href="mailer.html">sign up for mailer</a> </b>
+	</p>
+	<p>
+		<b> <a href="newest.html">newest meals</a> </b>
+	</p>
+	</navPanel>
+	<div id="content">
+	<div id="aboutus">
+	<p>We are happy to bring you the service required to spice up your meal plans.
+	<br/>We are situated in the heart of Welington whitch is great for collaborating with cheifs and restaurants for themed meals.
+	<br/>
+	<script type="text/javascript" language="javascript">
+
+  coded = "zBhzL8@0zL8i.EPz"
+  key = "4Ejh82V0quKXOTZHsG3v915WkfpaFdwADJlyrUQNtoxLmC7cReiBYgb6SPnIzM"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>email us any time</a>")
+
+
+</script><noscript>Sorry, you need Javascript on to email me.</noscript>
+
+	<br/><b>feel free too come visit our offices</b>
+	</p>
+	<table>
+	<tr>
+	<th>days</th><th>offices hours</th>
+	</tr>
+	<tr>
+	<td>mon</td><td>9am - 6pm</td>
+	</tr>
+	<tr>
+	<td>tues</td><td>9am - 6pm</td>
+	</tr>
+	<tr>
+	<td>wends</td><td>9am - 5pm</td>
+	</tr>
+	<tr>
+	<td>thurs</td><td>9am - 2pm</td>
+	</tr>
+	<tr>
+	<td>fri</td><td>9am - 7pm</td>
+	</tr>
+	<tr>
+	<td></td><td></td>
+	</tr>
+	</table>
+	
+	<p>
+	</div>
+	<div id="map">
+	</div>
+	</div>
+</body>
+</html>

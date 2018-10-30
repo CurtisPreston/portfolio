@@ -1,0 +1,23 @@
+158258 Tutorial Session 7
+
+
+1. Open the tutorial files index.html and script.js
+
+
+2. Complete the TODO items in script.js
+
+   a) fontChanges = Array();  // TODO: rewrite using alternative syntax 
+      - reaplce Array() with something equivalent.
+
+   b) // TODO: update "changeList"
+      - this updates the <p id="changeList"> element to show the list previously selected fonts
+
+   c) function revertFont() { // TODO: complete this function }
+      - changes the current body font back to the original body font "originalFont"
+
+
+3. Change the syntax of the for loop in the showChanges function to the "for in" syntax.
+
+
+4. Create a Google Maps API key;
+   - https://www.youtube.com/watch?v=9ImLCQBj9SE

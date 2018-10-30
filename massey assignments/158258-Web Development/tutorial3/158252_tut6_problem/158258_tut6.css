@@ -1,0 +1,50 @@
+header, footer { 
+    border: 5px solid red; 
+}
+
+h1 { 
+    border: 1px dashed red; 
+}
+
+nav { 
+    border: 5px solid green; 
+    width: 30%;
+    
+}
+
+ul { 
+	padding-left:0px;
+	margin:0px;
+    border: 1px solid green; 
+    list-style-type: none;
+    overflow: auto;
+}
+
+li { 
+    border: 1px dashed green; 
+    display: block;
+    float: left;
+    width:33%;
+    text-align: center;
+}
+
+main { 
+	overflow:auto;
+    border: 3px solid blue; 
+}
+
+main section {
+    border: 1px dashed blue; 
+    display:block;
+    float:left;
+    width:74%;
+}
+
+main aside {
+	
+	display:block;
+	float:right;
+    border: 1px dashed blue; 
+    color: blue;
+    width:25%;
+}

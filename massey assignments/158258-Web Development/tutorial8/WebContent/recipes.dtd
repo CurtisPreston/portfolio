@@ -1,0 +1,14 @@
+
+<!ELEMENT recipeBook (title,notes,recipe*)>
+<!ATTLIST recipeBook src CDATA "">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+<!ELEMENT recipe (name,description,ingredients,directions)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT ingredients (ingredient*)>
+<!ELEMENT ingredient (measurement,ingredientName)>
+<!ELEMENT measurement (#PCDATA)>
+<!ELEMENT ingredientName (#PCDATA)>
+<!ELEMENT directions (direction*)>
+<!ELEMENT direction (#PCDATA)>

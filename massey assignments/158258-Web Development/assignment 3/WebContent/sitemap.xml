@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/about.html</loc>
+  <lastmod>2018-10-11T22:40:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/index.html</loc>
+  <lastmod>2018-10-11T22:40:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/mailer.html</loc>
+  <lastmod>2018-10-11T22:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/newest.html</loc>
+  <lastmod>2018-10-11T22:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/getdata.html</loc>
+  <lastmod>2018-10-11T22:40:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/beansontoast.html</loc>
+  <lastmod>2018-10-11T22:40:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/BreakingBadBlackHatBrownies.html</loc>
+  <lastmod>2018-10-11T22:40:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seat-webdev.massey.ac.nz/16453897/158258/ass3/EclecticFreedomFries.html</loc>
+  <lastmod>2018-10-11T22:40:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

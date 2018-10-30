@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+
+<catalog>
+  <food>
+  	<Name>Mocha</Name>
+    <type>Empire Burlesque</type>
+    <Photo>WebContent/candles.jpg</Photo>
+	<availability>medium</availability>
+  </food>
+  <food>
+  	<Name>decaf</Name>
+    <type>Empire Burlesque</type>
+    <Photo>WebContent/teacup.jpg</Photo>
+	<availability>low</availability>
+  </food>
+  <food>
+  	<Name>Rasbery zinger</Name>
+    <type>Empire Burlesque</type>
+    <Photo>WebContent/teapot_white.jpg</Photo>
+	<availability>high</availability>
+  </food>
+  <food>
+  	<Name>Earl grey</Name>
+    <type>Empire Burlesque</type>
+    <Photo>WebContent/teapot_bone.jpg</Photo>
+	<availability>high</availability>
+  </food>
+</catalog>

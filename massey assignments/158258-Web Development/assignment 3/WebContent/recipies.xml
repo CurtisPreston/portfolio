@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipies>
+<recipie>
+<title>
+beans on toast
+</title>
+<ingredients>
+<ingredient>
+bread
+</ingredient>
+<ingredient>
+baked beans
+</ingredient>
+</ingredients>
+<directions>
+<direction>
+cook beans
+</direction>
+<direction>
+tost bread
+</direction>
+<direction>
+put beans on toast
+</direction>
+</directions>
+</recipie>
+</recipies>

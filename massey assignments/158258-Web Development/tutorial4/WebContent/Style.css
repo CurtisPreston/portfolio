@@ -1,0 +1,75 @@
+
+h1{
+	text-align: center;
+	
+}
+
+#discription{
+	font-size: 80%;
+	text-align: left;
+}
+
+#home{
+	
+	margin: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+
+table{
+	margin: auto;
+    text-align: center;
+	padding-left: 15%;
+}
+
+tr{
+	width:100%;
+}
+td{
+	text-align: center;	
+}
+#himg{
+	width: 100%;
+}
+
+#navbar{
+	width:10%;
+}
+#menu{
+	width:75%;
+	text-align: left;
+	
+	
+}
+#aboutus{
+	padding:0px;
+	display:flex;	 
+	float: left;
+	width:40%;
+	
+}
+#opentimes{
+	display:block;
+	float:left;
+	padding-left:10%;
+	padding-right:10%;
+	align-self:center;
+	padding-top:5%;
+	
+	text-align: left;
+	
+}
+#black{
+	background-color: black;
+}
+#page{
+	margin: auto;
+    width: 50%;
+padding: 10px;	
+text-align: center;
+}
+#cen{
+	text-align: center;
+}
